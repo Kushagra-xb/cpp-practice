@@ -3,17 +3,12 @@ using namespace std;
 
 int main() {
   int n;
-  cout<<" sum of no's till n = ";
-  cin>>n;
+  cout << "Enter a number: ";
+  cin >> n;
 
-  int sum=0;
-
-  for(int i=1;i<=n;i++) {
-    sum +=i;
-    if (i ==7) {
-      break;
-    }
+  for (int i = n; i <= n * 10; i = i + n) {
+    cout << i << endl;
+    
   }
-  cout<<"sum "<<sum;
   return 0;
 }
