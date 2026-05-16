@@ -2,13 +2,20 @@
 using namespace std;
 
 int main() {
-  int n;
-  cout << "Enter a number: ";
-  cin >> n;
+  int a;
+  cout << "Enter an integer: ";
+  cin >> a;
 
-  for (int i = n; i <= n * 10; i = i + n) {
-    cout << i << endl;
+  int sum = 0;
+
+  for(int i=1;i<=a;i++){
+     if(i%2 != 0){
     
+        sum += i;
+
+    }
   }
+  cout << "The sum of odd numbers from 1 to " << a << " is: " << sum << endl;
+  
   return 0;
 }
