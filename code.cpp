@@ -2,20 +2,24 @@
 using namespace std;
 
 int main() {
-  int a;
-  cout << "Enter an integer: ";
-  cin >> a;
+  int n;
+  cout<<"Enter a number: ";
+  cin>>n;
 
-  int sum = 0;
-
-  for(int i=1;i<=a;i++){
-     if(i%2 != 0){
-    
-        sum += i;
-
+  bool isprime = true;
+  for (int i=2;i<n;i++){
+    if(n%i==0){
+      isprime=false;
+      break; 
+    } 
     }
+  if (isprime){
+    cout<<n<<" is a prime number.";
   }
-  cout << "The sum of odd numbers from 1 to " << a << " is: " << sum << endl;
+  else{
+    cout<<n<<" is not a prime number.";
+  }
   
+
   return 0;
 }
