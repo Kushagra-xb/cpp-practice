@@ -2,20 +2,15 @@
 using namespace std;
 
 int main() {
-  int age;
-  cout << "Enter your age : ";
-  cin >> age;
+  int n;
+  cout<<"Table of any no : ";
+  cin>>n;
 
-  bool hasId = true;
- 
-  if (age>=18){
-    if(hasId){
-      cout<<"Entry allowed";
-     } else {
-        cout<<"No ID , entry denied";
-      }
-    }else {
-      cout<<"Too Young";
-    }
-  return 0;
+  int m;
+  cout<<"Upto : ";
+  cin>>m;
+  
+  for(int i=n;i<=n*m;i=i+n){
+    cout<<n<<" x "<<i/n<<" = "<<i<<endl;
+  }  return 0;
 }
