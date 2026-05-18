@@ -10,5 +10,5 @@ My C++ learnibg journey from scratch.
 - [ ] DSA (Striver's A2Z Sheet)
 
 ## RESOURCES
--Apna College C++ Course
--Striver's A2Z DSA Sheet
+- Apna College C++ Course
+- Striver's A2Z DSA Sheet
