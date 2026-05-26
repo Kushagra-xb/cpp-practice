@@ -3,8 +3,8 @@ My C++ learnibg journey from scratch.
 
 ## ROADMAP
 - [X] Basics (Hello World, Variable, I/O)
-- [ ] Conditions & Loops
-- [ ] Functions
+- [X] Conditions & Loops
+- [X] Functions
 - [ ] Arrays & Strings
 - [ ] OOP
 - [ ] DSA (Striver's A2Z Sheet)
