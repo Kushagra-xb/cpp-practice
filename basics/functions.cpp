@@ -1,18 +1,19 @@
 #include <iostream>
 using namespace std;
 
-int sum(int a, int b) {
-    int s = a + b;
-    return s;
-}   
-int min(int a,int b){
-    int m=(a<b?a:b);
-    return m;
+double factorial(double n){
+    double fact=1;
+    for(int i=1;i<=n;i++){
+        fact=fact*i;
+    }
+    return fact;
 }
 int main(){
-    int a,b;
-    cout<<"enter two no: ";
-    cin>>a>>b;
-    cout<<"sum is "<<sum(a,b)<<endl;
-    cout<<"min is "<<min(a,b)<<endl;
+    double n;
+    cout<<"Enter a number: ";
+    cin>>n;
+    cout<<"Factorial of "<<n<<" is "<<factorial(n)<<endl;
+    cout<<"Factorial of 5 is "<<factorial(5)<<endl;
+    cout<<"Factorial of 10 is "<<factorial(10)<<endl;
+    return 0;
 }
