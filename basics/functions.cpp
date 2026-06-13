@@ -1,19 +1,18 @@
 #include <iostream>
 using namespace std;
 
-double factorial(double n){
-    double fact=1;
+int sum(int n){
+    int total = 0;
     for(int i=1;i<=n;i++){
-        fact=fact*i;
+        total += i;
     }
-    return fact;
+    return total;
 }
 int main(){
-    double n;
+    int n;
     cout<<"Enter a number: ";
     cin>>n;
-    cout<<"Factorial of "<<n<<" is "<<factorial(n)<<endl;
-    cout<<"Factorial of 5 is "<<factorial(5)<<endl;
-    cout<<"Factorial of 10 is "<<factorial(10)<<endl;
+    cout<<"The sum of first "<<n<<" natural numbers is: "<<sum(n)<<endl;
+
     return 0;
 }
