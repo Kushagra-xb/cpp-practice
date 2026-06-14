@@ -1,18 +1,25 @@
 #include <iostream>
 using namespace std;
 
-int sum(int n){
-    int total = 0;
-    for(int i=1;i<=n;i++){
-        total += i;
+int coefficientN(int n ) {
+    if (n  == 0) {
+        return 1;
     }
-    return total;
+    return n * coefficientN(n - 1);
+}
+int coefficientR(int r ) {
+    if (r  == 0) {
+        return 1;
+    }
+    return r * coefficientR(r - 1);
+    
 }
 int main(){
-    int n;
-    cout<<"Enter a number: ";
-    cin>>n;
-    cout<<"The sum of first "<<n<<" natural numbers is: "<<sum(n)<<endl;
-
-    return 0;
+    int n,r;
+    cout << "Enter the value of n: ";
+    cin >> n;
+    cout << "Enter the value of r: ";
+    cin >> r;
+    int binomial = coefficientN(n) / (coefficientR(r) * coefficientR(n - r));
+    cout << " binomial coefficient = "<<binomial<<endl;
 }
