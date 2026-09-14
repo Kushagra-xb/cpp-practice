@@ -1,17 +1,18 @@
-# include <iostream>
+#include <iostream>
 using namespace std;
 
-int main() {
-  int n;
-  cout<<"Table of any number : ";
-  cin>>n;
+int main(){
+ int n;
+ cout<<"no ";
+ cin>>n;
+ 
+ for(int i=1;i<=n;i++){
+  for(int j=1;j<=i;j++){
+  cout<<j;}
+  cout<<endl;
+ }
+ 
+  return 0;
+}
 
-  int m;
-  cout<<"Upto : ";
-  cin>>m;
-  
-  for(int i=n;i<=n*m;i=i+n){
-    cout<<n<<" x "<<i/n<<" = "<<i<<endl;
-   return 0;
-}
-}
+
