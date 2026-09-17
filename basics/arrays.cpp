@@ -1,36 +1,16 @@
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 
 int main(){
-    int n;
-    cout<<"NO OF ELEMENTS: ";
-    cin>>n;
+ int age;
+ double height;
+ char grade;
+ cout<<"Enter your Age = "<<endl;cin>>age;
+ cout<<"Enter your height = "<<endl;cin>>height;
+ cout<<"enter your grade= "<<endl;cin>>grade;
 
-    int arr[n];
-    for(int i=0;i<n;i++){
-        cin>>arr[i];
-    } 
-    
-    cout<<"Your elements are - ";
-    for(int i=0;i<n;i++){
-        cout<<arr[i]<<" ";
-    }cout<<endl;
-   
-    int sum=0;
-    int max=arr[0];
-    int min=arr[0];
+ cout<<"your age,height and grade are "<<age<<", "<<height<<" and "<<grade;
 
-    for(int i =0;i<n;i++){
-      
-        sum +=arr[i];
-        if(arr[i]<min){
-            min=arr[i];
-        }
-        if(arr[i]>max){
-            max=arr[i];
-        }
-    } cout<<"Sum is "<<sum<<endl;
-    cout<<"Maximum is "<<max<<endl;
-    cout<<"Minimum is "<<min<<endl;
-return 0;
+
+     
 }
