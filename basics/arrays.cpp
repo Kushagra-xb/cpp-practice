@@ -5,6 +5,10 @@ int main(){
  cout<<"enter your name = "<<endl;
     string name;
  getline(cin,name);
+ if(name == "kushagra"){
+    cout<<"hello boss"<<endl;
+   return 0;
+ } 
  int age;
  double cgpa;
  char sec;
