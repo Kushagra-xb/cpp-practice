@@ -3,7 +3,8 @@ using namespace std;
 
 int main(){
 
-int w,b=1432;
+int w;
+float b=1432;
 int a,c;
 cout<<"press 1 - check balance: "<<endl;
 cout<<"press 2 - withdraw: "<<endl;
@@ -22,8 +23,8 @@ if(a==1){
     cout<<"enter PIN: "<<endl;
     cin>>c;
     if(c==1234){
-        b-0.5;
-            cout<<"Your Amount of "<<w<<" is been withdrawal."<<endl;
+       b= b-w-0.5;
+            cout<<"Your Amount of $"<<w<<" is been withdrawal."<<endl;
             cout<<"Charge of 0.5 is been deducted from Account."<<endl;
             cout<<"your current balance is: $"<<b;
             return 0;
