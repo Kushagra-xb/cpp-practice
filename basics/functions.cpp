@@ -1,10 +1,11 @@
 #include <iostream>
- 
-double avg(int a, int b){
-    return (a+b)/2.0;
+
+template <typename T>
+T minimum (T a, T b){
+    return (a>b)? b:a;
 }
 int main(){
-    int a{},b{};
+    double a{},b{};
     std::cin>>a>>b;
-    std::cout<<avg(a,b);
+    std::cout<<minimum( a , b )<<'\n';
 }
