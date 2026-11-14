@@ -12,19 +12,14 @@ D5. int power(int base, int exp = 2) using a loop. power(5) should give 25 and p
 
 D6. Challenge: void sortTwo(int& a, int& b) that rearranges the two variables so a holds the smaller value and b the larger. Test it with int x{ 9 }, y{ 4 };.*/
 
-void sortTwo(int&a , int&b){
-    if(a>b){
-        int temp =a;
-        a=b;
-        b=temp;
-    }else{
-        int temp =b;
-        b=a;
-        b=temp;
-    }
-    }
+bool canRace(int fast,int me){
+    return me *100 <= fast *107;
+}
 int main(){
-    int x{9},y{4};
-    sortTwo(x,y);
-    std::cout<<x<<" "<<y;
+    int fast{},me{};
+    std::cout << "Enter the speed of the fast car: ";
+    std::cin >> fast;
+    std::cout << "Enter your speed: ";
+    std::cin >> me;
+   std::cout << "Can you race? " << (canRace(fast,me) ? "Yes" : "No") << std::endl;
 }
