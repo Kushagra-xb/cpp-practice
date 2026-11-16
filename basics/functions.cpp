@@ -1,20 +1,42 @@
 #include <iostream>
 #include <string>
 
-void penality(int raceTime, int penality){
-    for(int i=0; i<penality; i++){
-        raceTime += 5;
+
+int points(int position){
+    switch(position){
+        case 1: return 25;
+        case 2: return 18;
+        case 3: return 15;
+        case 4: return 12;
+        case 5: return 10;
+        case 6: return 8;
+        case 7: return 6;
+        case 8: return 4;
+        case 9: return 2;
+        case 10: return 1;
+        default: return 0;
     }
-    std::cout<<"new race time: "<<raceTime<<'\n';
 }
-int main(){
-    int raceTime{};
-    std::cout<<"enter race time: ";
-    std::cin>>raceTime;
-    int penaltyCount{};
-    std::cout<<"enter penality: ";
-    std::cin>>penaltyCount;
-    penality(raceTime, penaltyCount);
-   std::cout<<"final race time: "<<raceTime<<'\n';
+int main() {
+    std::string name;
+    int position{};
+    int races{};
+    int sum{0};
+
+    std::cout << "Enter your name: ";
+    std::getline(std::cin, name);
+    std::cout<<"no of races: "<<'\n';
+    std::cin>>races;
+    std::cout<<"Enter your position in each race: "<<'\n';
+    for(int i{1};i<=races;i++){
+        std::cin>>position;
+     
+        sum += points(position);
+    }
+   
+
+   
+    std::cout << name << ", you scored " << sum << " points!" <<'\n';
+
     return 0;
 }
