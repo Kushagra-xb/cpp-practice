@@ -5,7 +5,7 @@ int main(){
     int n,k=0;
     cin>>n;
    int arr[n];
-   int tar;
+   int tar=0;
    int found=0;
    
    cout<<"enter elements of arrays: ";
@@ -13,10 +13,10 @@ int main(){
         cin>> arr[i];
     }cout<<endl;
     cout<<"enter target"<<endl;cin>>tar;
-    for(int i=0;i<5;i++){
+    for(int i=0;i<n;i++){
        if(tar==arr[i]){
-        k=arr[n];
-        cout<<k;
+        cout<<i+1<<" element u enter";
+        break;
        }
     }
   
